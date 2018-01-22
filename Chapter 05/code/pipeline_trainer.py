@@ -7,6 +7,9 @@ from sklearn.ensemble import ExtraTreesClassifier
 X, y = samples_generator.make_classification(n_samples=150, 
         n_features=25, n_classes=3, n_informative=6, 
         n_redundant=0, random_state=7)
+#print(X.shape)
+#y
+#X
 
 # Select top K features 
 k_best_selector = SelectKBest(f_regression, k=9)
